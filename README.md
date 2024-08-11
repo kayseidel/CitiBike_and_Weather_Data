@@ -4,7 +4,7 @@ Hypothesis: In nicer weather, individuals in Manhattan are more likely to rent C
 
 Data Sources:
 - CitiBike System Data- Data containing information of all CitiBike rides in 2014 (https://citibikenyc.com/system-data)
-- Manhattan Historical Weather Data- Data containing hourly information about the weather in Manhattan going back to 1979
+- Manhattan Historical Weather Data- Data containing hourly information about the weather in Manhattan going back to 1979 (https://openweathermap.org/history-bulk)
 
 Procedure:
 - First, I used an awk program to filter down the Manhattan weather dataset to get just the fields of the date and time,
@@ -27,6 +27,7 @@ Procedure:
   the average weather during that time, if there was rain, and the number of CitiBikes ridden during that time. Lastly, I used
   Matplotlib to create a scatter plot of my results, with the average temperature as the x-axis and the number of CitiBikes
   ridden as the y-axis. If there was rain recorded for that time, the point is red; otherwise it is blue.
+
 Conclusion:
 - The results from my plot show that there is a positive correlation between weather temperature and CitiBike rides, since as
   the temperature rises, so do the number of bike rides. However, most of the points on the plot occur around or below 2000
